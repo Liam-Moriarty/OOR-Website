@@ -1,0 +1,257 @@
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  /* Center slide text vertically */
+  position: relative; /* Add this to position the pseudo-element correctly */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 1) 85%
+  );
+  backdrop-filter: blur(2px); /* Apply the blur effect to the top half */
+  z-index: 1; /* Ensure the overlay is above the image */
+}
+
+.swiper-slide img {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  z-index: 0; /* Ensure the image is below the overlay */
+}
+
+/* CENTER CONTENT */
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65rem;
+  height: 30rem;
+  z-index: 99;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 3rem;
+}
+
+.released {
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+  writing-mode: vertical-rl; /* Rotates the text 90 degrees to the right */
+  transform: rotate(180deg); /* Flips the text to be upright */
+  white-space: nowrap; /* Ensures the text doesn't wrap */
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.released span {
+  color: var(--button-purple);
+}
+
+.img-album-wrapper {
+  width: 50%;
+  height: 100%;
+}
+
+.img-album-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.song-text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+.song-text-wrapper h3 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 4rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.transparent-text {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 4rem;
+  -webkit-text-stroke: 2px var(--text-primary);
+  color: transparent;
+}
+
+.song-buttons-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1184px) {
+  .center-content {
+    top: 56%;
+    width: 50rem;
+    height: 45rem;
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .released {
+    position: absolute;
+    bottom: 31%;
+    left: 30%;
+    writing-mode: horizontal-tb;
+    transform: none;
+    white-space: normal;
+  }
+
+  .img-album-wrapper {
+    width: 60%;
+    height: 65%;
+  }
+
+  .song-text-wrapper {
+    position: static;
+    transform: none;
+    width: 100%;
+    text-align: center;
+    padding: 2.4rem;
+  }
+
+  .transparent-text {
+    font-size: 2.5rem;
+    line-height: normal;
+    -webkit-text-stroke: 2px var(--text-primary);
+    color: transparent;
+  }
+
+  .song-text-wrapper h3 {
+    font-size: 2rem;
+    line-height: normal;
+  }
+
+  .song-buttons-container {
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .center-content {
+    width: 40rem;
+    height: 20rem;
+  }
+
+  .img-album-wrapper {
+    width: 60%;
+  }
+
+  .song-text-wrapper {
+    left: 60%;
+  }
+
+  .song-text-wrapper h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .song-buttons-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+} */
+
+@media screen and (max-width: 532px) {
+  .center-content {
+    top: 54.5%;
+    padding: 2rem 1rem;
+    width: 100%;
+    height: 50rem;
+  }
+
+  .released {
+    position: absolute;
+    bottom: 32%;
+    left: 0;
+    width: 100%;
+    writing-mode: horizontal-tb;
+    text-align: center;
+    transform: none;
+    white-space: normal;
+    font-size: 0.8rem;
+  }
+
+  .img-album-wrapper {
+    width: 100%;
+    height: 60%;
+  }
+
+  .song-text-wrapper {
+    position: static;
+    transform: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-top: 5rem;
+  }
+
+  .transparent-text {
+    font-size: 1.4rem;
+    line-height: normal;
+    -webkit-text-stroke: 2px var(--text-primary);
+    color: transparent;
+  }
+
+  .song-text-wrapper h3 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .song-buttons-container {
+    flex-direction: column;
+  }
+}
