@@ -2,9 +2,11 @@ import React from "react";
 import "./about.css";
 import Button from "../../../components/button/Button";
 import Cards from "../../../components/cards/Cards";
-import { albumCards } from "../../../constants/constants";
-import { playlists } from "../../../constants/constants";
-import { featuredSlider } from "../../../constants/constants";
+import {
+  albumCards,
+  playlists,
+  featuredSlider,
+} from "../../../constants/constants";
 import { FaChevronRight } from "react-icons/fa6";
 
 import { Swiper, SwiperSlide } from "swiper/react";

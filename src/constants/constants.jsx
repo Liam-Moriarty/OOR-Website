@@ -33,6 +33,9 @@ import playlist2 from "../images/ambition.jpg";
 import playlist3 from "../images/playlist11.jpg";
 import playlist4 from "../images/35vi.jpg";
 
+import accountsGold from "../images/accountsGold.webp";
+import accountsPremium from "../images/accountsPremium.webp";
+
 export const socialLinks = [
   { path: "#", icons: <FaInstagram /> },
   { path: "#", icons: <FaTiktok /> },
@@ -104,5 +107,26 @@ export const playlists = [
   { id: 1, path: playlist1, alt: "playlist1" },
   { id: 2, path: playlist2, alt: "playlist2" },
   { id: 3, path: playlist3, alt: "playlist3" },
-  { id: 3, path: playlist4, alt: "playlist4" },
+  { id: 4, path: playlist4, alt: "playlist4" },
 ];
+
+export const accounts = {
+  gold: [
+    {
+      id: 1,
+      title: "UNLOCK GOLD FEATURES",
+      img: accountsGold,
+      description:
+        "Monstercat Gold is an individual music licensing subscription that gives members access to thousands of high-quality songs to use in their creative content.",
+    },
+  ],
+  premium: [
+    {
+      id: 1,
+      title: "SYNC & PARTNERSHIPS",
+      img: accountsPremium,
+      description:
+        "Discover the unique partnerships and diverse audiences that have embraced the Monstercat brand.",
+    },
+  ],
+};

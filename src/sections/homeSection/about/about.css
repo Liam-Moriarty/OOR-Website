@@ -102,6 +102,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .about-extended {
+    gap: 2rem;
+  }
   .about-featured {
     display: flex;
     justify-content: flex-start;

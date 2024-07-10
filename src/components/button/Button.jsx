@@ -1,7 +1,7 @@
 import React from "react";
 import "./button.css";
 
-const button = ({ iconRight, iconLeft, children, onClick, outline }) => {
+const Button = ({ iconRight, iconLeft, children, onClick, outline }) => {
   return (
     <div className={`${outline ? "outline" : "nonOutline"}`}>
       {iconRight && iconRight}
@@ -11,4 +11,4 @@ const button = ({ iconRight, iconLeft, children, onClick, outline }) => {
   );
 };
 
-export default button;
+export default Button;
