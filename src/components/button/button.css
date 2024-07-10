@@ -7,7 +7,7 @@
   font-weight: 800;
   text-transform: uppercase;
   color: var(--text-primary);
-  padding: 1rem 3rem;
+  padding: 0.8rem 4rem;
   border: none;
   background-color: var(--button-green);
 }
@@ -21,7 +21,7 @@
   font-weight: 800;
   text-transform: uppercase;
   color: var(--text-primary);
-  padding: 1rem 3rem;
+  padding: 0.8rem 4rem;
   border: 1px solid var(--text-primary);
   background: transparent;
 }
@@ -29,13 +29,13 @@
 @media screen and (max-width: 532px) {
   .nonOutline {
     font-size: 0.8rem;
-    padding: 1rem;
+    padding: 0.8rem;
     width: 100%;
     gap: 0.2rem;
   }
   .outline {
     font-size: 0.8rem;
-    padding: 1rem;
+    padding: 0.8rem;
     width: 100%;
     gap: 0.2rem;
   }

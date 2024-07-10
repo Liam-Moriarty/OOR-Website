@@ -1,11 +1,12 @@
 import React from "react";
 import "./button.css";
 
-const button = ({ icon, children, onClick, outline }) => {
+const button = ({ iconRight, iconLeft, children, onClick, outline }) => {
   return (
     <div className={`${outline ? "outline" : "nonOutline"}`}>
-      {icon}
+      {iconRight && iconRight}
       {children}
+      {iconLeft && iconLeft}
     </div>
   );
 };

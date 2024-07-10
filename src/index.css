@@ -14,10 +14,10 @@
 
 ::-webkit-scrollbar {
   width: 8px;
-  background: var(--text-secondary);
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: var(--text-secondary);
   border-radius: 6px;
 }

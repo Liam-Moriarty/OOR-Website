@@ -4,12 +4,12 @@
   height: 100vh;
 }
 
-.swiper {
+.heroSwiper {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide {
+.heroSwiperSlider {
   /* Center slide text vertically */
   position: relative; /* Add this to position the pseudo-element correctly */
   display: flex;
@@ -18,7 +18,7 @@
   overflow: hidden;
 }
 
-.swiper-slide::before {
+.heroSwiperSlider::before {
   content: "";
   position: absolute;
   top: 0;
@@ -34,7 +34,7 @@
   z-index: 1; /* Ensure the overlay is above the image */
 }
 
-.swiper-slide img {
+.heroSwiperSlider img {
   /* display: block; */
   width: 100%;
   height: 100%;

@@ -32,10 +32,10 @@ const Hero = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
-        className="mySwiper"
+        className="heroSwiper"
       >
         {imageSlider.map((img) => (
-          <SwiperSlide key={img.id}>
+          <SwiperSlide key={img.id} className="heroSwiperSlider">
             <img src={img.path} alt="slider" />
 
             <div className="center-content">
@@ -54,10 +54,10 @@ const Hero = () => {
                   <h3>{img.album}</h3>
 
                   <div className="song-buttons-container">
-                    <Button children="View Release" icon={<FaPlay />} />
+                    <Button children="View Release" iconRight={<FaPlay />} />
                     <Button
                       children="Listen on Spotify"
-                      icon={<FaSpotify />}
+                      iconRight={<FaSpotify />}
                       outline
                     />
                   </div>
