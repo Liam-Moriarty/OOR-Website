@@ -5,6 +5,9 @@ import {
   FaTwitch,
   FaFacebook,
   FaDiscord,
+  FaYoutube,
+  FaSpotify,
+  FaApple,
 } from "react-icons/fa6";
 
 import imgSlider1 from "../images/oor5.jpg";
@@ -35,6 +38,13 @@ import playlist4 from "../images/35vi.jpg";
 
 import accountsGold from "../images/accountsGold.webp";
 import accountsPremium from "../images/accountsPremium.webp";
+
+import event1 from "../images/event1.webp";
+import event2 from "../images/event2.webp";
+import event3 from "../images/event3.webp";
+import event4 from "../images/event4.webp";
+import event5 from "../images/event5.webp";
+import event6 from "../images/event6.webp";
 
 export const socialLinks = [
   { path: "#", icons: <FaInstagram /> },
@@ -117,7 +127,7 @@ export const accounts = {
       title: "UNLOCK GOLD FEATURES",
       img: accountsGold,
       description:
-        "Monstercat Gold is an individual music licensing subscription that gives members access to thousands of high-quality songs to use in their creative content.",
+        "One OK Rock Gold is an individual music licensing subscription that gives members access to thousands of high-quality songs to use in their creative content.",
     },
   ],
   premium: [
@@ -126,7 +136,75 @@ export const accounts = {
       title: "SYNC & PARTNERSHIPS",
       img: accountsPremium,
       description:
-        "Discover the unique partnerships and diverse audiences that have embraced the Monstercat brand.",
+        "Discover the unique partnerships and diverse audiences that have embraced the One Ok Rock band.",
     },
+  ],
+};
+
+export const events = [
+  {
+    id: 1,
+    bgImg: event1,
+    title: "EVENTS",
+    description:
+      "Find out where you can experience One Ok Rock artists performing live around the world",
+  },
+  {
+    id: 2,
+    bgImg: event2,
+    title: "One Ok Rock TV",
+    description:
+      "Tune in to our weekly Twitch broadcast for livestreamed sets, artist residencies, original content and more",
+  },
+  {
+    id: 3,
+    bgImg: event3,
+    title: "SHOP",
+    description:
+      "Cop the latest looks from our apparel collections and dig through our vinyl offerings",
+  },
+  {
+    id: 4,
+    bgImg: event4,
+    title: "CALL OF THE WILD",
+    description:
+      "Dive into an unbound exploration of sound with One Ok Rock weekly radio show & podcast",
+  },
+  {
+    id: 5,
+    bgImg: event5,
+    title: "SILK SHOWCASE",
+    description:
+      "Enjoy One Ok Rock Silk’s weekly radio show & podcast, featuring the best in progressive house, trance, and more",
+  },
+  {
+    id: 6,
+    bgImg: event6,
+    title: "PRESS",
+    description:
+      "Catch up on breaking news, interviews, and One Ok Rock announcements in the media",
+  },
+];
+
+export const footerLinks = {
+  links: [
+    { links: "ABOUT One Ok Rock" },
+    { links: "CONTACT US" },
+    { links: "CAREERS" },
+    { links: "NEWS" },
+    { links: "PRESS" },
+  ],
+
+  terms: [{ links: "TERMS OF SERVICE" }, { links: "PRIVACY POLICY" }],
+
+  socialLinks: [
+    { icons: <FaInstagram /> },
+    { icons: <FaTiktok /> },
+    { icons: <FaXTwitter /> },
+    { icons: <FaTwitch /> },
+    { icons: <FaDiscord /> },
+    { icons: <FaYoutube /> },
+    { icons: <FaSpotify /> },
+    { icons: <FaApple /> },
   ],
 };

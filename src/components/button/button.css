@@ -1,4 +1,4 @@
-.nonOutline {
+.basicStyles {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,32 +8,20 @@
   text-transform: uppercase;
   color: var(--text-primary);
   padding: 0.8rem 4rem;
+}
+
+.nonOutline {
   border: none;
   background-color: var(--button-green);
 }
 
 .outline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: var(--text-primary);
-  padding: 0.8rem 4rem;
   border: 1px solid var(--text-primary);
   background: transparent;
 }
 
 @media screen and (max-width: 532px) {
-  .nonOutline {
-    font-size: 0.8rem;
-    padding: 0.8rem;
-    width: 100%;
-    gap: 0.2rem;
-  }
-  .outline {
+  .basicStyles {
     font-size: 0.8rem;
     padding: 0.8rem;
     width: 100%;

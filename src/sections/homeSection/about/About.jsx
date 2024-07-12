@@ -22,8 +22,8 @@ const About = () => {
       <div className="about-wrapper">
         <h2>LEADING THE MOVEMENT TOWARDS ARTIST SUSTAINABILITY</h2>
         <p>
-          At Monstercat, we strive to create artist sustainability through novel
-          partnerships, career flexibility and a global commuinity
+          At One ok rock, we strive to create artist sustainability through
+          novel partnerships, career flexibility and a global commuinity
         </p>
         <Button children="Learn More" outline iconLeft={<FaChevronRight />} />
       </div>
