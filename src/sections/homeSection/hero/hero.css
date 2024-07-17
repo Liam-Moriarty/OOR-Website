@@ -180,31 +180,6 @@
   }
 }
 
-/* @media screen and (max-width: 768px) {
-  .center-content {
-    width: 40rem;
-    height: 20rem;
-  }
-
-  .img-album-wrapper {
-    width: 60%;
-  }
-
-  .song-text-wrapper {
-    left: 60%;
-  }
-
-  .song-text-wrapper h2 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-  }
-
-  .song-buttons-container {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-} */
-
 @media screen and (max-width: 532px) {
   .center-content {
     top: 54.5%;

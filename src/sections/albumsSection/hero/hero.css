@@ -1,0 +1,269 @@
+.albumHeroExtended {
+  margin-top: 7.6rem;
+  width: 100%;
+  height: auto;
+}
+
+.album-title {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 4rem;
+}
+
+.release-title {
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.album-feature-slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border: 1px solid var(--text-primary);
+}
+
+.albumSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.albumSwiperSlider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.albumSwiperSlider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+.album-slide-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* CONTENT */
+
+.album-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  padding: 3rem;
+}
+
+.album-content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.album-img-content {
+  position: relative;
+  max-width: 40%;
+  height: 100%;
+  padding-left: 1.8rem;
+}
+
+.album-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.album-released {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.album-released span {
+  color: var(--button-purple);
+}
+
+.album-title-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  flex: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.featured-title {
+  font-size: 2rem;
+  letter-spacing: 0;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.album-artists {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .album-title {
+    font-size: 3.2rem;
+    line-height: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .album-title-mobile {
+    font-size: 3.2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .albumHeroExtended {
+    margin-top: 6rem;
+  }
+
+  .album-released {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+
+  .release-title {
+    letter-spacing: 0rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .album-feature-slider {
+    height: 400px;
+  }
+
+  .album-content {
+    padding: 2rem 3rem;
+  }
+
+  .album-content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .album-img-content {
+    position: relative;
+    height: 100%;
+    max-width: 40%;
+    padding-left: 1.8rem;
+  }
+
+  .featured-title {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .album-featured-title-mobile {
+    -webkit-text-stroke: 2px var(--text-primary);
+    font-size: 2.5rem;
+    line-height: 1rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .album-title {
+    font-size: 2.2rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .album-title-mobile {
+    font-size: 2.2rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .album-released {
+    position: static;
+    writing-mode: horizontal-tb;
+    transform: rotate(0);
+    white-space: nowrap;
+  }
+
+  .release-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .album-feature-slider {
+    height: 580px;
+  }
+
+  .album-content {
+    padding: 2rem;
+  }
+
+  .album-content-wrapper {
+    flex-direction: column;
+  }
+
+  .album-img-content {
+    position: static;
+    height: 70%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .album-artists {
+    display: none;
+  }
+
+  .featured-title {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .album-featured-title-mobile {
+    -webkit-text-stroke: 2px var(--text-primary);
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+}

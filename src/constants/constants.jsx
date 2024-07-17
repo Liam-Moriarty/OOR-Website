@@ -10,9 +10,9 @@ import {
   FaApple,
 } from "react-icons/fa6";
 
-import imgSlider1 from "../images/oor5.jpg";
+import imgSlider1 from "../images/oor3.jpg";
 import imgSlider2 from "../images/oor4.jpg";
-import imgSlider3 from "../images/oor3.jpg";
+import imgSlider3 from "../images/oor5.jpg";
 
 import albumCards1 from "../images/playlist10.jpg";
 import albumCards2 from "../images/playlist9.jpg";
@@ -66,8 +66,8 @@ export const imageSlider = [
   {
     id: 1,
     path: imgSlider1,
-    song: "We Are",
-    album: "Ambitions",
+    song: "Kanzen Kaku Dreamer",
+    album: "Niche Syndrome",
     released: "Released January 9, 2017",
   },
   {
@@ -80,8 +80,8 @@ export const imageSlider = [
   {
     id: 3,
     path: imgSlider3,
-    song: "Kanzen Kaku Dreamer",
-    album: "Niche Syndrome",
+    song: "We Are",
+    album: "Ambitions",
     released: "Released February 3, 2009",
   },
 ];
@@ -208,3 +208,30 @@ export const footerLinks = {
     { icons: <FaApple /> },
   ],
 };
+
+export const albumSlider = [
+  {
+    id: 1,
+    path: imgSlider1,
+    song: "Kanzen Kaku Dreamer",
+    album: "Niche Syndrome",
+    released: "Released February 3, 2009",
+    artistsImg: artists1,
+  },
+  {
+    id: 2,
+    path: imgSlider2,
+    song: "Renegades",
+    album: "Luxury Disease",
+    released: "Released April 15, 2021",
+    artistsImg: artists2,
+  },
+  {
+    id: 3,
+    path: imgSlider3,
+    song: "We Are",
+    album: "Ambitions",
+    released: "Released January 9, 2017",
+    artistsImg: artists3,
+  },
+];
