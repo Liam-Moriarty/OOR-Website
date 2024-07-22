@@ -180,6 +180,6 @@ export const musicList = [
     id: 29,
     img: luxuryDisease,
     song: "Wonder - Japanese Ver.",
-    album: "Zankyo Reference",
+    album: "Luxury Disease",
   },
 ];

@@ -31,10 +31,10 @@ const Hero = () => {
             pagination={true}
             mousewheel={true}
             keyboard={true}
-            // autoplay={{
-            //   delay: 3500,
-            //   disableOnInteraction: false,
-            // }}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
             modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
             className="albumSwiper"
           >

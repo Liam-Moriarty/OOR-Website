@@ -46,6 +46,10 @@ import event4 from "../images/event4.webp";
 import event5 from "../images/event5.webp";
 import event6 from "../images/event6.webp";
 
+import brand1 from "../images/oorbrand1.jpg";
+import brand2 from "../images/oorbrand2.jpg";
+import brand3 from "../images/oorbrand3.jpg";
+
 export const socialLinks = [
   { path: "#", icons: <FaInstagram /> },
   { path: "#", icons: <FaTiktok /> },
@@ -229,9 +233,32 @@ export const albumSlider = [
   {
     id: 3,
     path: imgSlider3,
-    song: "We Are",
-    album: "Ambitions",
+    song: "Make It Out Alive",
+    album: "Make It Out Alive",
     released: "Released January 9, 2017",
     artistsImg: artists3,
+  },
+];
+
+export const brands = [
+  {
+    id: 1,
+    path: brand1,
+    description:
+      "The Beginning by ONE OK ROCK perfectly captures the intense and transformative journey of Kenshin Himura, echoing his internal conflicts and his resolve to forge a new path. The song's powerful lyrics and energetic rhythm mirror the film's themes of redemption and new beginnings.",
+  },
+
+  {
+    id: 2,
+    path: brand2,
+    description:
+      "Heartache delivers a poignant and emotional backdrop to Rurouni Kenshin, reflecting the protagonist's sorrow and longing for peace. The song's haunting melody and heartfelt lyrics underscore Kenshin's struggles with his past and his desire for a brighter future.",
+  },
+
+  {
+    id: 3,
+    path: brand3,
+    description:
+      "Vandalize brings a raw and rebellious energy to Rurouni Kenshin, highlighting the chaotic and violent world that Kenshin navigates. The intense rock elements and evocative lyrics emphasize the film's themes of conflict, resilience, and the fight for justice.",
   },
 ];

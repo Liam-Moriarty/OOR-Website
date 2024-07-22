@@ -1,0 +1,218 @@
+.musicExtended {
+  margin-top: 7.6rem;
+  margin-bottom: 8rem;
+  width: 100%;
+  height: auto;
+}
+
+.music-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+
+/* TITLE */
+
+.music-title-container {
+  width: 100%;
+}
+
+.music-title-container h1,
+.music-title-container p {
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.music-title-container h1 {
+  font-size: 3.5rem;
+}
+
+.music-title-container p {
+  font-size: 1.2rem;
+}
+
+/* SEARCH */
+
+.music-search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid var(--text-primary);
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.search input {
+  width: 0;
+  outline: none;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.6s ease-in-out;
+}
+
+.search input.expanded {
+  margin-left: 1rem;
+  width: 200px;
+}
+
+.search-icon {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.search input::placeholder {
+  color: var(--text-primary);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+/* GRID CONTENT */
+
+.music-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 20rem);
+  width: 100%;
+  height: auto;
+  gap: 1.5rem;
+}
+
+.music-grid-items {
+  width: 100%;
+  height: auto;
+}
+
+.grid-image-wrapper {
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-song,
+.grid-album {
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.grid-album {
+  font-style: italic;
+  letter-spacing: 0rem;
+  font-weight: 400;
+}
+
+/* PAGINATION */
+
+.pagination-wrapper {
+  position: absolute;
+  bottom: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.paginationBttns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.previousBttn,
+.nextBttn {
+  cursor: pointer;
+}
+
+.paginationLi {
+  display: none;
+}
+
+.paginationActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 1.5rem;
+  border: 1px solid var(--text-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1440px) {
+  .music-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .music-title-container h1,
+  .music-title-container p {
+    letter-spacing: 0.1rem;
+  }
+
+  .music-title-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .music-title-container p {
+    font-size: 0.8rem;
+  }
+
+  .search {
+    padding: 0.5rem 1rem;
+  }
+
+  .search input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .music-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .music-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 432px) {
+  .music-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+  }
+}
