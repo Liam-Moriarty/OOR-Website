@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import Albums from "./pages/albums/Albums";
+import Artists from "./pages/artists/Artists";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/albums" element={<Albums />} />
-          {/* <Route path="/artists" element={<Artists />} />
-          <Route path="/playlist" element={<Playlist />} /> */}
+          <Route path="/artists" element={<Artists />} />
+          {/* <Route path="/playlist" element={<Playlist />} /> */}
         </Routes>
       </Router>
     </main>

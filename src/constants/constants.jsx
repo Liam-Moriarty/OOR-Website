@@ -50,6 +50,11 @@ import brand1 from "../images/oorbrand1.jpg";
 import brand2 from "../images/oorbrand2.jpg";
 import brand3 from "../images/oorbrand3.jpg";
 
+import taka from "../images/takaArtist.jpg";
+import ryota from "../images/ryotaArtist.jpg";
+import toru from "../images/toruArtistss.jpg";
+import tomoya from "../images/tomoyaArtist.webp";
+
 export const socialLinks = [
   { path: "#", icons: <FaInstagram /> },
   { path: "#", icons: <FaTiktok /> },
@@ -260,5 +265,39 @@ export const brands = [
     path: brand3,
     description:
       "Vandalize brings a raw and rebellious energy to Rurouni Kenshin, highlighting the chaotic and violent world that Kenshin navigates. The intense rock elements and evocative lyrics emphasize the film's themes of conflict, resilience, and the fight for justice.",
+  },
+];
+
+export const artistBio = [
+  {
+    id: 1,
+    path: taka,
+    name: 'Takahiro "Taka" Moriuchi',
+    about:
+      "Lead vocalist of One Ok Rock, known for his powerful and versatile voice that can convey deep emotion. He is a former member of the boy band NEWS and has been instrumental in shaping the band's international success.",
+  },
+
+  {
+    id: 2,
+    path: ryota,
+    name: "Ryota Kohama",
+    about:
+      "Bassist, known for his energetic and rhythmic bass lines that add depth to the band's music. He started as a dancer before switching to bass, bringing a unique flair to his performances.",
+  },
+
+  {
+    id: 3,
+    path: toru,
+    name: "Toru Yamashita",
+    about:
+      "Guitarist and bandleader, recognized for his dynamic guitar riffs and charismatic stage presence. He plays a significant role in the band's songwriting and overall creative direction.",
+  },
+
+  {
+    id: 4,
+    path: tomoya,
+    name: "Tomoya Kanki",
+    about:
+      "Drummer, providing solid and versatile drumming that is crucial to the band's sound. He joined One Ok Rock in 2007 and is known for his technical skill and ability to adapt to various musical styles.",
   },
 ];

@@ -1,0 +1,36 @@
+.album-title {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .album-title {
+    font-size: 3.2rem;
+    line-height: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .album-title-mobile {
+    font-size: 3.2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .album-title {
+    font-size: 2.2rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .album-title-mobile {
+    font-size: 2.2rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,101 @@
+.artistsBioExtended {
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+}
+
+.artists-about {
+  color: var(--text-primary);
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.artists-about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: auto;
+  width: 100%;
+}
+
+.artists-about-item {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 25rem;
+}
+
+.artists-about-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.artists-img-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.artists-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artists-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 3rem;
+  width: 100%;
+  height: 100%;
+}
+
+.text-btn-container h1 {
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.text-btn-container p {
+  color: var(--text-secondary);
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.artists-btn-container {
+  display: inline-flex;
+}
+
+@media only screen and (max-width: 991px) {
+  .artists-text-wrapper {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 731px) {
+  .text-btn-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .artists-text-wrapper {
+    padding: 1rem;
+  }
+  .artists-about-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 45rem;
+  }
+
+  .artists-about-item.reverse {
+    flex-direction: column;
+  }
+}

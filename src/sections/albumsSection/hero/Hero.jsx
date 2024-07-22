@@ -13,14 +13,12 @@ import {
 } from "swiper/modules";
 import { albumSlider } from "../../../constants/constants";
 import Button from "../../../components/button/Button";
+import PageTitle from "../../../components/pageTitle/PageTitle";
 
 const Hero = () => {
   return (
     <div className="sectionContainer albumHeroExtended">
-      <h1 className="album-title">
-        <span className="transparent-text album-title-mobile">ONE OK ROCK</span>
-        <br /> MUSIC
-      </h1>
+      <PageTitle heading="ONE OK ROCK" subHeading="music" />
 
       <section className="setionContainer">
         <h2 className="release-title">FEATURED RELEASE</h2>
