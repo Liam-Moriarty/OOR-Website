@@ -20,6 +20,13 @@
   background: transparent;
 }
 
+@media screen and (max-width: 1440px) {
+  .basicStyles {
+    font-weight: 700;
+    padding: 0.6rem 2rem;
+  }
+}
+
 @media screen and (max-width: 532px) {
   .basicStyles {
     font-size: 0.8rem;

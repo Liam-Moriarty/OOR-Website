@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import Albums from "./pages/albums/Albums";
 import Artists from "./pages/artists/Artists";
+import Playlist from "./pages/playlist/Playlist";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/albums" element={<Albums />} />
           <Route path="/artists" element={<Artists />} />
-          {/* <Route path="/playlist" element={<Playlist />} /> */}
+          <Route path="/playlist" element={<Playlist />} />
         </Routes>
       </Router>
     </main>

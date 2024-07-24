@@ -1,0 +1,172 @@
+.playlistMusicExtended {
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+}
+
+.playlistMusic-title {
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.playlistMusic-icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.playlistMusic-icon-wrapper li {
+  list-style: none;
+  padding: 1.5rem 2.5rem;
+  border: 1px solid var(--text-primary);
+}
+
+.playlistMusic-icon-wrapper li a {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.musicList-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.musicList-items {
+  display: grid;
+  grid-template-columns: 5rem 1fr 8rem 8rem;
+  padding: 1rem 0rem;
+  width: 100%;
+}
+
+.items-id,
+.items-timer,
+.items-share,
+.song-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.song-icon,
+.items-share {
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.song-icon {
+  margin-left: 1rem;
+}
+
+.items-songs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.songMusic-title h1 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+
+.songMusic-title p {
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+@media only screen and (max-width: 768px) {
+  .playlistMusic-title {
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .playlistMusic-icon-wrapper li {
+    padding: 1rem 2rem;
+  }
+
+  .playlistMusic-icon-wrapper li a {
+    font-size: 1rem;
+  }
+
+  .musicList-items {
+    grid-template-columns: 1rem 1fr 4rem 4rem;
+  }
+
+  .songMusic-title h1 {
+    font-size: 1rem;
+  }
+
+  .songMusic-title p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 443px) {
+  .playlistMusic-title {
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+  }
+
+  .playlistMusic-icon-wrapper li {
+    padding: 1rem 1.2rem;
+  }
+
+  .playlistMusic-icon-wrapper li a {
+    font-size: 1rem;
+  }
+
+  .items-songs {
+    gap: 0.8rem;
+  }
+
+  .items-id,
+  .items-timer,
+  .items-share,
+  .song-icon {
+    font-size: 0.8rem;
+  }
+
+  .song-icon,
+  .items-share {
+    font-size: 1rem;
+  }
+
+  .song-icon {
+    margin-left: 0.5rem;
+  }
+
+  .musicList-items {
+    grid-template-columns: 1rem 1fr 3rem 3rem;
+  }
+
+  .songMusic-title h1 {
+    font-size: 0.9rem;
+  }
+
+  .songMusic-title p {
+    font-size: 0.7rem;
+  }
+}

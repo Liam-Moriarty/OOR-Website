@@ -8,6 +8,8 @@ import {
   FaYoutube,
   FaSpotify,
   FaApple,
+  FaSoundcloud,
+  FaBandcamp,
 } from "react-icons/fa6";
 
 import imgSlider1 from "../images/oor3.jpg";
@@ -64,11 +66,19 @@ export const socialLinks = [
   { path: "#", icons: <FaDiscord /> },
 ];
 
+export const playlistIcons = [
+  { path: "#", icons: <FaBandcamp /> },
+  { path: "#", icons: <FaSoundcloud /> },
+  { path: "#", icons: <FaApple /> },
+  { path: "#", icons: <FaSpotify /> },
+  { path: "#", icons: <FaYoutube /> },
+];
+
 export const pageLinks = [
   { path: "/", name: "Home" },
   { path: "/albums", name: "Albums" },
   { path: "/artists", name: "Artists" },
-  { path: "/playlists", name: "Playlists" },
+  { path: "/playlist", name: "Playlists" },
 ];
 
 export const imageSlider = [

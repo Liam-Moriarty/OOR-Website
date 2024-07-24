@@ -119,10 +119,12 @@
 }
 
 .featured-title {
-  font-size: 2rem;
-  letter-spacing: 0;
-  line-height: 2.5rem;
-  margin-bottom: 2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 4rem;
 }
 
 .album-artists {
@@ -182,7 +184,7 @@
 
   .album-featured-title-mobile {
     -webkit-text-stroke: 2px var(--text-primary);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     line-height: 1rem;
   }
 }
@@ -226,7 +228,6 @@
   .featured-title {
     font-size: 1.3rem;
     line-height: 2rem;
-    margin-bottom: 1rem;
   }
 
   .album-featured-title-mobile {

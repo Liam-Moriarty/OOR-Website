@@ -58,7 +58,7 @@ const Hero = () => {
                     </div>
 
                     <div className="album-title-content">
-                      <h1 className="album-title featured-title">
+                      <h1 className="featured-title">
                         <span className="transparent-text album-featured-title-mobile">
                           {slider.song}
                         </span>
