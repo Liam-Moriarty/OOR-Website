@@ -16,10 +16,10 @@ const Music = () => {
 
   // Filter the entire music list based on the search term
   const filteredMusic = musicList.filter((item) => {
-    return search.toLocaleLowerCase() === ""
+    return search.toLowerCase() === ""
       ? item
-      : item.song.toLowerCase().includes(search) ||
-          item.album.toLowerCase().includes(search);
+      : item.song.toLowerCase().includes(search.toLowerCase()) ||
+          item.album.toLowerCase().includes(search.toLowerCase());
   });
 
   // Apply pagination to the filtered music list
